@@ -32,5 +32,8 @@ export function LinkedList() {
       }
       console.log(listRepresentation);
     }
-    return { append, prepend, logList };
+    function gethead() {
+      return head
+    }
+    return { append, prepend, logList,gethead};
   }

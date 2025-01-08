@@ -6,5 +6,6 @@ list.append("cat");
 list.append("mango");
 
 list.prepend("fire");
-list.logList();
-console.log('hello');
+list.prepend('monkey')
+console.log(list.gethead());
+// list.logList();
