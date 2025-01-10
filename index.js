@@ -14,4 +14,10 @@ list.append('old')
 list.append('sajid')
 // list.pop()
 list.logList();
-console.log(list.size());
+// console.log(list.size());
+// console.log(list.atIndex(4
+
+// ));
+
+// console.log(list.containsValue('kochi'));
+console.log(list.findValue('sajid'));
