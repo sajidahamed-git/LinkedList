@@ -2,6 +2,7 @@ import { NewNode } from "./newNode.js";
 export function LinkedList() {
     let head = null;
     let lastNode = null;
+    let listRepresentation = [];
   
     function append(value) {
       const node = NewNode(value);
@@ -21,10 +22,9 @@ export function LinkedList() {
     }
     function logList() {
       let currentNode = head;
-      const listRepresentation = [];
       while (currentNode) {
         listRepresentation.push([
-          `value: ${currentNode.value}, Next Node:${
+          `value: ${currentNode.value}    , Next Node:${
             currentNode.nextNode ? currentNode.nextNode.value : null
           }`,
         ]);
@@ -35,5 +35,19 @@ export function LinkedList() {
     function gethead() {
       return head
     }
-    return { append, prepend, logList,gethead};
+    function getTail() {
+      return lastNode
+    }
+    function size() {
+      let counter  = 0
+      let currentNode = head
+      while (currentNode) {
+        currentNode = currentNode.nextNode
+        counter ++
+      }return counter
+    }
+    function pop() {
+      
+    }
+    return { append,size, prepend, logList,gethead,getTail};
   }

@@ -7,5 +7,11 @@ list.append("mango");
 
 list.prepend("fire");
 list.prepend('monkey')
-console.log(list.gethead());
-// list.logList();
+
+list.append('new')
+list.prepend('kochi')
+list.append('old')
+list.append('sajid')
+// list.pop()
+list.logList();
+console.log(list.size());
