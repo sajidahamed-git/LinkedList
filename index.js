@@ -5,19 +5,12 @@ list.append("dog");
 list.append("cat");
 list.append("mango");
 
-list.prepend("fire");
 list.prepend('monkey')
 
-list.append('new')
-list.prepend('kochi')
-list.append('old')
-list.append('sajid')
-// list.pop()
+
+list.insertAt('mam',3)
+console.log(list.atIndex(4));
+// list.removeAt(2);
+
+console.log(list.size());
 list.logList();
-// console.log(list.size());
-// console.log(list.atIndex(4
-
-// ));
-
-// console.log(list.containsValue('kochi'));
-console.log(list.findValue('sajid'));
