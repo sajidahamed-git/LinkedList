@@ -1,1 +1,0 @@
-code for the Odin Project Hashmap https://www.theodinproject.com/lessons/javascript-hashmap
